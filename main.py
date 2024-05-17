@@ -16,7 +16,7 @@ def send_welcome(message):
 #TODO: Fix  Time  Error 
 
 @bot.message_handler(func=lambda msg: True)
-def new(message) :
+def Download(message) :
     if re.match(url_regex, message.text):
         video_url = message.text
         yt = YouTube(video_url)
